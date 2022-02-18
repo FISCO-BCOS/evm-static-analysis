@@ -167,8 +167,8 @@ publishing {
                     }
                 }
                 scm {
-                    connection = 'https://github.com/FISCO-BCOS/solcJ.git'
-                    url = 'https://github.com/FISCO-BCOS/solcJ.git'
+                    connection = 'https://github.com/FISCO-BCOS/evm-static-analysis.git'
+                    url = 'https://github.com/FISCO-BCOS/evm-static-analysis.git'
                 }
             }
         }
