@@ -18,8 +18,8 @@ public class ExecScript {
         try {
             initDefaultBundled();
         } catch (IOException e) {
-            logger.error(" Can't init solc compiler, e: ", e);
-            throw new RuntimeException("Can't init solc compiler: ", e);
+            logger.error(" Can't init evm analysis script, e: ", e);
+            throw new RuntimeException("Can't init evm analysis script: ", e);
         }
     }
 
