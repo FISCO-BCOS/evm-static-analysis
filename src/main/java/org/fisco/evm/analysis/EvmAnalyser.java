@@ -22,13 +22,11 @@ public class EvmAnalyser {
      * @param abiFile
      * @param binFile
      * @param useSM3
-     * @param armArch
      * @return
      */
-    public static Result process(
-            String abiFile, String binFile, boolean useSM3, boolean armArch)
+    public static Result process(String abiFile, String binFile, boolean useSM3)
             throws IOException {
-        return getInstance().processAbiAndBin(abiFile, binFile, useSM3, armArch);
+        return getInstance().processAbiAndBin(abiFile, binFile, useSM3);
     }
 
     public static class Result {
@@ -108,8 +106,7 @@ public class EvmAnalyser {
         }
     }
 
-    private Result processAbiAndBin(
-            String abiFile, String binFile, boolean useSM3, boolean armArch)
+    private Result processAbiAndBin(String abiFile, String binFile, boolean useSM3)
             throws IOException {
 
         ExecScript executableScript = getInstance().getExecutableScript();
@@ -119,9 +116,6 @@ public class EvmAnalyser {
         commandParts.add("-b " + binFile);
         if (useSM3) {
             commandParts.add("-g");
-        }
-        if (armArch) {
-            commandParts.add("-A");
         }
 
         ProcessBuilder processBuilder =
