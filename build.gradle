@@ -51,7 +51,7 @@ dependencies {
 
 archivesBaseName = 'evm-analysis'
 group = 'org.fisco-bcos'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0-rc1'
 
 // Additional attribute definition
 ext {
