@@ -12,3 +12,8 @@ dist
 bin
 out
 log/
+
+# macOS
+.DS_Store
+*.gpg
+*.properties

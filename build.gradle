@@ -44,14 +44,14 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.30'
     testCompile group: 'commons-codec', name: 'commons-codec', version: '1.14'
-    
+
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.0'
 }
 
 archivesBaseName = 'evm-analysis'
 group = 'org.fisco-bcos'
-version = '1.0.0-rc1'
+version = '1.0.0-rc2-SNAPSHOT'
 
 // Additional attribute definition
 ext {
